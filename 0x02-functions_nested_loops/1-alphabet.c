@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
- * main - entry point
- * display message with new way
+ * print_alphabet - entry point
+ * display message new way
  * Return: Sucess
  */
 void print_alphabet(void)
