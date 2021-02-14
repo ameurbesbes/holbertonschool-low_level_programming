@@ -1,41 +1,50 @@
 #include "holberton.h"
-#include <stdio.h>
 /**
-*print_to_98 - main function
-*@n: integer
+* print_times_table - print n times the tables
+* @n: where start table
+*
 *Return: nothing
 */
-void print_to_98(int n)
+void print_times_table(int n)
 {
-int i;
+int r, c;
+int h, d, u, mul;
 
-if (n < 98)
+if (n >= 0 && n <= 15)
 {
-for (i = n; i <= 98; ++i)
+for (r = 0; r <= n; r++)
 {
-if (i != 98)
+for (c = 0; c <= n; c++)
 {
-printf("%d, ", i);
-}
+mul = r * c;
+h = mul / 100;
+d = mul / 10 % 10;
+u = mul % 10;
+if (h == 0 && c != 0)
+{
+_putchar(' ');
+if (d == 0)
+_putchar(' ');
 else
+_putchar(d + '0');
+_putchar(u + '0');
+}
+else if (h != 0)
 {
-printf("%d\n", i);
+_putchar(h + '0');
+_putchar(d + '0');
+_putchar(u + '0');
 }
-}
-}
-else
+if (c == 0)
+_putchar('0');
+if (c != n)
 {
-for (i = n; i >= 98; --i)
-{
-if (i != 98)
-{
-printf("%d, ", i);
-}
-else
-{
-printf("%d\n", i);
+_putchar(',');
+_putchar(' ');
 }
 }
+_putchar('\n');
+c = 0;
 }
-
+}
 }
