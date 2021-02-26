@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
-*_isupper -0
+*_isdigit -0
 *@c: char
 *Return: return 1 or 0.
 */
