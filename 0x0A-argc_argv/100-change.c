@@ -11,10 +11,10 @@ int main(int argc, char **argv)
 int n, i, sum = 0;
 int t[5] = {25, 10, 5, 2, 1};
 
-if (argc <= 1)
+if (argc != 2)
 {
-        printf("Error\n");
-        return (1);
+printf("Error\n");
+return (1);
 }
 n = atoi(argv[1]);
 if (n < 0)
