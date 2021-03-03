@@ -3,8 +3,9 @@
 #include <stdio.h>
 /**
  * free_grid - free 2D array
- * 
- * 
+ * @grid: 2d array
+ * @height: len array
+ * Return:void
  */
 void free_grid(int **grid, int height)
 {
