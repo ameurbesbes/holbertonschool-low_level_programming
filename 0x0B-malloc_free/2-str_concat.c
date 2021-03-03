@@ -13,10 +13,20 @@ char *str_concat(char *s1, char *s2)
 	char *p;
 	unsigned int i, j, len1 = 0, len2 = 0, x = 0;
 
-	while (s1[len1] != '\0')
-		len1++;
-	while (s2[len2] != '\0')
-		len2++;
+	if (s1 == NULL)
+		len1 = 0;
+	else
+	{
+		while (s1[len1] != '\0')
+			len1++;
+	}
+	if (s2 == NULL)
+		len2 = 0;
+	else
+	{
+		while (s2[len2] != '\0')
+			len2++;
+	}
 	p = malloc(len1 + len2 + 1);
 	if (p == NULL)
 		return (NULL);
