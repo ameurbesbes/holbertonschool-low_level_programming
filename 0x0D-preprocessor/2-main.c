@@ -3,7 +3,7 @@
 
 /**
  * main - prints the name of the file it was compiled from
- *@viod: void.
+ *
  * Return: always 0 (Success)
  */
 
