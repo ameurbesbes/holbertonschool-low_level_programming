@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
 {
 	int i, j, res;
 	int (*fun)(int, int);
-	
+
 	if (argc != 4)
 	{
 		printf("Error\n");
@@ -23,9 +23,10 @@ int main(int argc, char *argv[])
 	if (fun == NULL)
 	{
 		printf("Error\n");
-		exit (99);
+		exit(99);
 	}
 
 	res = fun(i, j);
 	printf("%d\n", res);
+	return (0);
 }
