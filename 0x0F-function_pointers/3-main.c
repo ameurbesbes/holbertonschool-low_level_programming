@@ -1,5 +1,6 @@
 #include "3-calc.h"
 #include <stdlib.h>
+#include <stdio.h>
 /**
  * main - main
  * @argc: argc
@@ -10,19 +11,19 @@ int main(int argc, char *argv[])
 {
 	int i, j, res;
 	int (*fun)(int, int);
-
-	i = atoi(argv[1]);
-	j = atoi(argv[3]);
+	
 	if (argc != 4)
 	{
 		printf("Error\n");
-		return (98);
+		exit(98);
 	}
+	i = atoi(argv[1]);
+	j = atoi(argv[3]);
 	fun = get_op_func(argv[2]);
 	if (fun == NULL)
 	{
 		printf("Error\n");
-		return (99);
+		exit (99);
 	}
 
 	res = fun(i, j);
