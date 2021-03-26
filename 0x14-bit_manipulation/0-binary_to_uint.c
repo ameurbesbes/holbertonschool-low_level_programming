@@ -12,9 +12,9 @@ int i, len;
 	if (b == NULL)
 		return (0);
 	len = 0;
-	for (i = 0 ;b[i] != '\0' ; i++)
+	for (i = 0 ; b[i] != '\0' ; i++)
 	{
-	if(b[i] != '0' && b[i] != '1')
+	if (b[i] != '0' && b[i] != '1')
 		return (0);
 	len++;
 	}
@@ -27,7 +27,7 @@ int i, len;
 	a = 0;
 	if (b[i] == '1')
 	a = 1;
-	sum = sum + a *k;
+	sum = sum + a * k;
 	k = k * 2;
 	}
 		return (sum);
